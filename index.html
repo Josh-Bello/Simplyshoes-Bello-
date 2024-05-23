@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="icon" type="images/x-icon" href="Modern_Minimalist_Shoes_Store_Logo__1_-removebg-preview.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Simply Shoes</title>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        background-image: url('images (5).jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+   nav {
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent); /* Change white to black */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+    .logo img {
+        width: 100px;
+        height: auto;
+    }
+
+ .links {
+    display: flex;
+    align-items: center;
+    z-index: 999;
+	}
+
+    .links a {
+        color: #FFFFFF;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 1.2rem;
+        transition: 0.2s linear;
+    }
+
+  
+
+    section {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .main-container {
+        width: 40%;
+        color: black;
+    }
+
+    .main-container .heading {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .heading h1 {
+        font-size: clamp(1rem, 1rem + 5vw, 7rem);
+    }
+
+    .heading span {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: clamp(1rem, 1rem + 5vw, 3rem);
+    }
+
+    .main-container .star {
+        color: #ff4a09;
+        font-size: 1.3rem;
+        margin: -5px 0 20px 0;
+    }
+
+    .main-container p {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+   
+    
+
+    .main-container button {
+        width: 50%;
+        height: 6vh;
+        margin: 20px 0;
+        font-size: 1.3rem;
+        font-weight: 700;
+        border-radius: 90px;
+        border: 3px solid #34C759;
+        background-color: transparent;
+        color: #34C759;
+        transition: 0.2s linear;
+		animation: pulse 1.5s infinite alternate;
+		width: 40vh; 
+  
+    
+    }
+	@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+    .main-container button:hover {
+        background-color: #34C759;
+        color: white;
+        box-shadow: 0 0 10px 1px #34C759;
+    }
+
+    .main-container .shoes {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .shoes .extra img {
+        width: 100px;
+        transform: rotate(-30deg);
+        filter: drop-shadow(2px 2px 10px white);
+        transition: 0.2s linear;
+    }
+
+    .shoes .extra img:hover {
+        scale: 1.2;
+    }
+
+    .image img {
+    width: 600px;
+    filter: drop-shadow(0 0 200px white);
+    margin-top: 190px;
+    }
+	footer {
+    width: 100%;
+    height: 5vh;
+    background-color: #000000; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+.links a:hover {
+    color: #34C759; 
+}
+
+.star {
+    color: #34C759; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white; 
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Modern_Minimalist_Shoes_Store_Logo-removebg-preview.png" alt="Logo">
+        </div>
+        <div class="links">
+            <a href="e commerce.html">HOME</a>
+            <a href="Shop.html">SHOP</a>
+            <a href="Aboutus.html">ABOUT US</a>
+            <a href="Contactus.html">CONTACT US</a>
+         
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="heading">
+                <h1 class="animate__animated animate__bounceInLeft"> PURE </h1>
+                <span class="animate__animated animate__bounceInRight">Walk</span>
+            </div>
+            <div class="star">
+                <i class="fa-solid fa-star animate__animated animate__bounceIn"></i>
+                <i class="fa-solid fa-star animate__animated animate__bounceIn"></i>
+                <i class="fa-solid fa-star animate__animated animate__bounceIn"></i>
+                <i class="fa-solid fa-star animate__animated animate__bounceIn"></i>
+                <i class="fa-regular fa-star animate__animated animate__bounceIn"></i>
+            </div>
+            <p class="animate__animated animate__fadeIn">Introducing PureWalk, the best-selling shoe from Simply Shoes. Renowned for its unparalleled comfort and exceptional support, PureWalk has become a favorite among customers who seek the perfect balance of style and functionality. Its sleek design and superior craftsmanship ensure that every step is pure bliss. Whether you're navigating city streets or enjoying a leisurely stroll, PureWalk is your ultimate choice for comfort and reliability. Join the countless satisfied customers who have made PureWalk their top pick and experience why it’s the best-selling shoe of Simply Shoes.</p>
+            
+            <button id="addToCartBtn" class="animate__animated animate__zoomIn">ADD TO CART</button>
+        </div>
+        <div class="image">
+            <img src="mojtaba-fahiminia-t4g1gctAaKk-unsplash-removebg-preview.png" class="animate__animated animate__fadeInRight animate__delay-1s" alt="Air Jordan 4 Breds">
+        </div>
+    </section>
+	<script>
+        document.getElementById("addToCartBtn").addEventListener("click", function() {
+            var productName = "PureWalk";
+            alert(productName + " is added to cart");
+        });
+    </script>
+<footer>
+    <div class="footer-content">
+         &copy; 2024 Simply Shoes. All rights reserved. (Bello)
+    </div>
+</footer>
+</body>
+</html>

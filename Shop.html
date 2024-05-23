@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="Modern_Minimalist_Shoes_Store_Logo__1_-removebg-preview.png"/>
+    <title>Simply Shoes</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            width: 250px;
+        }
+
+        td img {
+            width: 50%;
+            height: auto;
+        }
+
+        td:hover {
+            transform: scale(1.05);
+        }
+
+       nav {
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent); /* Change white to black */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+        nav .nav-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .nav-container .logo {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-container .logo img {
+            width: 140px;
+            height: 90px;
+        }
+
+        .nav-container .links a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: 0.2s linear;
+        }
+
+        .nav-container .links a:hover {
+            color: #34C759;
+        }
+
+        .nav-container .links i {
+            color: black;
+            font-size: 1.7rem;
+            margin: 0 20px;
+        }
+
+        section {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-image: url('1_Nyj7m6nq0Vu5pEh26RHF8Q.png');
+        }
+
+        button {
+            background-color: #8B0000;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #34C759;
+            transform: scale(1.1);
+        }
+
+        button:active {
+            transform: scale(1.05);
+        }
+
+        @keyframes addToCartAnimation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        button:focus {
+            animation: addToCartAnimation 0.5s;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="Modern_Minimalist_Shoes_Store_Logo-removebg-preview.png">
+            </div>
+            <div class="links">
+                <a href="index.html">HOME</a>
+                <a href="Shop.html">SHOP</a>
+                <a href="Aboutus.html">ABOUT US</a>
+                <a href="Contactus.html">CONTACT US</a>
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <table>
+            <tr>
+                <td class="Product 1">
+                    <img src="istockphoto-1407127841-1024x1024-removebg-preview.png" alt="Product 1">
+                    <h3>SimpleStride</h3>
+                    <p>Experience the perfect blend of comfort and style with SimplyStride. Designed for those who appreciate simplicity and elegance, these shoes provide a seamless walking experience that keeps you moving effortlessly throughout the day. </p>
+                    <p>₱4,000</p>
+                 <button onclick="addToCart(1, 'SimpleStride')">Add to Cart</button>
+                </td>
+                <td class="product2">
+                    <img src="pexels-perfect-lens-13698234-removebg-preview.png" alt="Product 2">
+                    <h3>EasyStep</h3>
+                    <p>Step into a world of ease and convenience with EasyStep. Crafted for everyday wear, these shoes offer superior comfort and durability, making them your go-to choice for any occasion. Whether you're running errands or enjoying a casual outing, EasyStep ensures every step is a breeze.</p>
+                    <p>₱10,000</p>
+                    <button onclick="addToCart(2, 'EasyStep')">Add to Cart</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="product3">
+                    <img src="mojtaba-fahiminia-t4g1gctAaKkk-unsplash-removebg-preview-removebg-preview.png" alt="Product 3">
+                    <h3>PureWalk</h3>
+                    <p>PureWalk, our best-selling shoe, is celebrated for its exceptional comfort and support. Its sleek design and superior craftsmanship make it the top choice for those seeking style and functionality. Experience why PureWalk is the favorite among our customers and enjoy unmatched comfort with every step.</p>
+                    <p>₱4,000</p>
+                    <button onclick="addToCart(3, 'PureWalk')">Add to Cart</button>
+                </td>
+                <td class="product4">
+                    <img src="pexels-webdonut-19090-removebg-preview (1).png" alt="Product 4">
+                    <h3>SimpleSole</h3>
+                    <p>Embrace the essence of simplicity with SimpleSole. These shoes combine minimalist design with maximum comfort, making them a staple in your wardrobe. Whether you're at work or at play, SimpleSole ensures your feet feel great all day long.</p>
+                    <p>₱8,000</p>
+                     <button onclick="addToCart(4, 'SimpleSole')">Add to Cart</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+    function addToCart(productId, productName) {
+        alert("Product: " + productName + " added to cart!");
+        }
+    </script>
+</body>
+</html>
